@@ -107,3 +107,14 @@ public void Funcion_Escenario_ResultadoEsperado(arg1, arg2, ..., argN)
 {
 }
 ```
+### Ignore
+
+El atributo de Ignore permite señalar alguna función de prueba como algo que debe ignorado. Viene acompañado de un mensaje que podemos usar para recordarnos porqué decidimos ignorar dicha prueba. Este atributo es muy útil para ignorar temporalmente pruebas sin perderlas de vista, que es muy superior a comentarlas o eliminarlas del código.
+
+```
+[Test]
+[Ignore("Esta prueba se ignora temporalmente. Reintegrar cuando haya sido revisada.")]
+public void Funcion_Escenario_ResultadoEsperado()
+{
+}
+```
