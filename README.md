@@ -7,7 +7,7 @@ Este repositorio es un conjunto de notas como _referencia rápida_ para realizar
 
 MSTest está incluido dentro de Visual Studio. No necesita instalación adicional.
 
-Una vez preparada el proyecto que se va a probar, se agrega dentro de la solución otro proyecto de tipo **Unit Test Project**. Su nombre debe tener el formato:
+Una vez preparado el proyecto que se va a probar, se agrega dentro de la solución otro proyecto de tipo **Unit Test Project**. Su nombre debe tener el formato:
 
 > NombreProyecto.TestUnit
 
