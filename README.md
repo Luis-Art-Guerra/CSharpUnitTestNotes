@@ -43,3 +43,13 @@ Dentro de la función, una buena práctica es separar las instrucciones en tres 
 // Assert
     Finalmente, se usa el objeto Assert para comprobar el resultado de la prueba.
 ```
+
+## Prueba unitaria con NUnit
+
+NUnit debe instalarse en cada proyecto para poder ser usado. Para instalar, hay que abrir el _Package Manager_, e introducir los siguientes comandos:
+
+```shell
+PM> install-package NUnit -Version 3.8.1
+...
+PM> install-package NUnit3TestAdapter -Version 3.8.0
+```
