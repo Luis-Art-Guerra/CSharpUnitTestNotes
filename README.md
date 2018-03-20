@@ -85,3 +85,9 @@ Assert.That(result == true);
 ```
 Lo anterior se lee como lenguaje natural: _"Afirma que el resultado es verdadero"_
 
+### SetUp y TearDown
+
+Existen dos atributos para definir dos tipos de funciones en una prueba unitaria.
+
+* [SetUp]: Define una función que se **ejecuta antes** de comenzar cada una de las funciones designadas como [Test]. Se usa para definir un estado inicial antes de cada prueba.
+* [TearDown]: Define una función que se **ejecuta después** de finalizar cada una de las funciones designadas como [Test]. Se usa para realizar una limpieza después de cada prueba.
