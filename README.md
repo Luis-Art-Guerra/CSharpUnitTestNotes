@@ -91,3 +91,19 @@ Existen dos atributos para definir dos tipos de funciones en una prueba unitaria
 
 * [SetUp]: Define una función que se **ejecuta antes** de comenzar cada una de las funciones designadas como [Test]. Se usa para definir un estado inicial antes de cada prueba.
 * [TearDown]: Define una función que se **ejecuta después** de finalizar cada una de las funciones designadas como [Test]. Se usa para realizar una limpieza después de cada prueba.
+
+### TestCase
+
+Si queremos realizar una prueba varias veces con distintos argumentos, podemos utilizar el atributo [TestCase]. TestCase toma un número de argumentos y ejecuta la función con ellos; se genera una ejecución por cada TestCase agregado. El número de argumentos en TestCase debe ser el mismo que en la función a la que se asigna. Ejemplo:
+
+```
+[Test]
+[TestCase(arg1, arg2, ..., argN)] // caso 1
+[TestCase(arg1, arg2, ..., argN)] // caso 2
+.
+.
+[TestCase(arg1, arg2, ..., argN)] // caso N
+public void Funcion_Escenario_ResultadoEsperado(arg1, arg2, ..., argN)
+{
+}
+```
