@@ -1,4 +1,4 @@
-# CSharpUnitTestNotes
+# Notas: Pruebas Unitarias en C# y Visual Studio
 Este repositorio es un conjunto de notas como _referencia rápida_ para realizar pruebas unitarias. Si has llegado a este repositorio y ves información útil aquí, considera adquirir el curso _"Unit Testing for C# Developers"_ de _Mosh Hamedani_. Puedes encontrar su curso en Udemy.
 
 # Procedimiento para realizar pruebas unitarias
