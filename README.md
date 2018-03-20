@@ -29,15 +29,17 @@ namespace NombreProyectoAProbar.UnitTest
 }
 ```
 
-As good practice, each function from the UnitTest class should use the next format for its name:
-> NameOfTheTestedFunction\_Scenario\_ExpectedBehaviour
+Como buena práctica, cada función de la clase UnitTest debe usar el siguiente formato para su nombre:
 
-Inside the function, a good practice is to separate its instructions in three main sections:
+> NombreFuncionAProbar\_Escenario\_ResultadoEsperado
+
+Dentro de la función, una buena práctica es separar las instrucciones en tres secciones:
+
 ```
 // Arrange
-    In this section contains all initializations
+    Aquí se encuentran las inicializaciones
 // Act
-    Here are written all action to perform the test
+    Aquí se ponen todas las acciones realizadas para la prueba
 // Assert
-    Finally, the Assert object used for the test result is put here
+    Finalmente, se usa el objeto Assert para comprobar el resultado de la prueba.
 ```
