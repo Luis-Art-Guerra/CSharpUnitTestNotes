@@ -53,3 +53,31 @@ PM> install-package NUnit -Version 3.8.1
 ...
 PM> install-package NUnit3TestAdapter -Version 3.8.0
 ```
+
+Los atributos cambian de nombre:
+
+```
+[TestClass]     ->      [TestFixture]
+[TestMethod]    ->      [Test]
+```
+
+El objeto **Assert** se sigue usando, pero ya no es una clase de la biblioteca **Microsoft.VisualStudio.TestTools.UnitTesting**, ahora la referencia es:
+
+> using NUnit.Framework;
+
+Si se dejan las dos referencias juntas, habrá error debido a que el compilador no sabrá a cual objeto Assert se está refiriendo el código.
+
+La clase Assert tiene algunas ventajas en cuanto a lectura.
+
+Para **MSTest**, Assert se puede usar así:
+```
+Assert.IsTrue(result);
+```
+
+Adicionalmente, **NUnit** agrega las siguientes dos formas:
+```
+Assert.That(result, Is.True);
+Assert.That(result == true);
+```
+Lo anterior se lee como lenguaje natural: _"Afirma que el resultado es verdadero"_
+
