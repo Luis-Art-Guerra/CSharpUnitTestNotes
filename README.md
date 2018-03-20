@@ -29,11 +29,15 @@ namespace NombreProyectoAProbar.UnitTest
 }
 ```
 
-Como buena práctica, cada función de la clase UnitTest debe usar el siguiente formato para su nombre:
+Como buena práctica, la clase de pruebas debe llamarse como la clase que vas a probar más la palabra _Tests_. Por ejemplo:
+
+> ClassNameTests
+
+Además, cada función de la clase de pruebas debe usar el siguiente formato para su nombre:
 
 > NombreFuncionAProbar\_Escenario\_ResultadoEsperado
 
-Dentro de la función, una buena práctica es separar las instrucciones en tres secciones:
+Dentro de cada función, una buena práctica es separar las instrucciones en tres secciones:
 
 ```
 // Arrange
